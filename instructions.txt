@@ -1,0 +1,29 @@
+~~~~~~~~~~~~~~~~~~~~~~
+~ setup instructions ~
+~~~~~~~~~~~~~~~~~~~~~~
+most importantly, you need MySql 8.0 (or above) and an installation of MySql Workbench
+
+create a mysql server with the name 'coursework', hosted on the testing machine (so accessible using localhost)
+
+then, using the database dump found in the dump folder, go to Server -> Data Import
+select the 'import from self-contained file' option, and ignore the default schema option.
+then press Start Import.
+
+finally go to Server -> Users & Privileges and add an account with the following details
+username: flask
+password: F1@sk***8
+give it all permissions.
+
+next, run the nginx executable in the nginx folder. this is not strictly necessary, but to test without nginx you must open the rendering.js and adjust
+all fetch urls to be localhost:5000 instead of localhost
+
+go into the server folder, and run the 'run.bat' file. (ignore 'run_smtp.bat' & 'debug_run.bat')
+
+then finally open the index.html file in the site folder, and you're good to go.
+
+~~~~~~~~~~~~~~~~~~~~~
+~ test instructions ~
+~~~~~~~~~~~~~~~~~~~~~
+email: test@test.com
+password: testing
+this account has admin access level. any accounts created will have default access levels.
